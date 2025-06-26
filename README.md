@@ -2,11 +2,13 @@
 
 <a href='http://tencent.github.io/MimicMotion'><img src='https://img.shields.io/badge/Project-Page-Green'></a> <a href='https://arxiv.org/abs/2406.19680'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> [![Replicate](https://replicate.com/zsxkib/mimic-motion/badge)](https://replicate.com/zsxkib/mimic-motion)
 
-MimicMotion: High-Quality Human Motion Video Generation with Confidence-aware Pose Guidance
+<p align="center">
+<b>[ICML 2025] MimicMotion: High-Quality Human Motion Video Generation with Confidence-aware Pose Guidance</b>
 <br/>
 *Yuang Zhang<sup>1,2</sup>, Jiaxi Gu<sup>1</sup>, Li-Wen Wang<sup>1</sup>, Han Wang<sup>1,2</sup>, Junqi Cheng<sup>1</sup>, Yuefeng Zhu<sup>1</sup>, Fangyuan Zou<sup>1</sup>*
 <br/>
-[<sup>1</sup>Tencent; <sup>2</sup>Shanghai Jiao Tong University]
+[<sup>1</sup>Tencent  <sup>2</sup>Shanghai Jiao Tong University]
+</p>
 
 <p align="center">
   <img src="assets/figures/preview_1.gif" width="100" />
@@ -31,6 +33,7 @@ In recent years, generative artificial intelligence has achieved significant adv
 
 ## News
 
+* `[2025-05-03]`: &#x1F389; Our paper is accepted by ICML 2025. Congratulations and many thanks to the co-authors!
 * `[2024-07-08]`: 🔥 [A superior model checkpoint](https://huggingface.co/tencent/MimicMotion/blob/main/MimicMotion_1-1.pth) has been released as version 1.1. The maximum number of video frames has now been expanded from 16 to 72, significantly enhancing the video quality!
 * `[2024-07-01]`: Project page, code, technical report and [a basic model checkpoint](https://huggingface.co/tencent/MimicMotion/blob/main/MimicMotion_1.pth) are released. A better checkpoint supporting higher quality video generation will be released very soon. Stay tuned!
 
