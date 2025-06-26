@@ -5,7 +5,7 @@
 <p align="center">
 <b>MimicMotion: High-Quality Human Motion Video Generation with Confidence-aware Pose Guidance</b>
 <br/>
-*Yuang Zhang<sup>1,2</sup>, Jiaxi Gu<sup>1</sup>, Li-Wen Wang<sup>1</sup>, Han Wang<sup>1,2</sup>, Junqi Cheng<sup>1</sup>, Yuefeng Zhu<sup>1</sup>, Fangyuan Zou<sup>1</sup>*
+<i>Yuang Zhang<sup>1,2</sup>, Jiaxi Gu<sup>1</sup>, Li-Wen Wang<sup>1</sup>, Han Wang<sup>1,2</sup>, Junqi Cheng<sup>1</sup>, Yuefeng Zhu<sup>1</sup>, Fangyuan Zou<sup>1</sup></i>
 <br/>
 [<sup>1</sup>Tencent  <sup>2</sup>Shanghai Jiao Tong University]
 </p>
