@@ -97,10 +97,10 @@ The minimum VRAM requirement for the 16-frame U-Net model is 8GB; however, the V
 
 ## Citation	
 ```bib
-@article{mimicmotion2024,
+@inproceedings{zhang2025mimicmotion,
   title={MimicMotion: High-Quality Human Motion Video Generation with Confidence-aware Pose Guidance},
   author={Yuang Zhang and Jiaxi Gu and Li-Wen Wang and Han Wang and Junqi Cheng and Yuefeng Zhu and Fangyuan Zou},
-  journal={arXiv preprint arXiv:2406.19680},
-  year={2024}
+  booktitle={International Conference on Machine Learning},
+  year={2025}
 }
 ```
