@@ -1,9 +1,9 @@
-# MimicMotion
+# MimicMotion [ICML 2025]
 
-<a href='http://tencent.github.io/MimicMotion'><img src='https://img.shields.io/badge/Project-Page-Green'></a> <a href='https://arxiv.org/abs/2406.19680'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> [![Replicate](https://replicate.com/zsxkib/mimic-motion/badge)](https://replicate.com/zsxkib/mimic-motion)
+<a href='http://tencent.github.io/MimicMotion'><img src='https://img.shields.io/badge/Project-Page-Green'></a> <a href='https://arxiv.org/abs/2406.19680'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
 
 <p align="center">
-<b>[ICML 2025] MimicMotion: High-Quality Human Motion Video Generation with Confidence-aware Pose Guidance</b>
+<b>MimicMotion: High-Quality Human Motion Video Generation with Confidence-aware Pose Guidance</b>
 <br/>
 *Yuang Zhang<sup>1,2</sup>, Jiaxi Gu<sup>1</sup>, Li-Wen Wang<sup>1</sup>, Han Wang<sup>1,2</sup>, Junqi Cheng<sup>1</sup>, Yuefeng Zhu<sup>1</sup>, Fangyuan Zou<sup>1</sup>*
 <br/>
