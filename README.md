@@ -29,13 +29,19 @@
   <i>An overview of the framework of MimicMotion.</i>
 </p>
 
-In recent years, generative artificial intelligence has achieved significant advancements in the field of image generation, spawning a variety of applications. However, video generation still faces considerable challenges in various aspects such as controllability, video length, and richness of details, which hinder the application and popularization of this technology. In this work, we propose a controllable video generation framework, dubbed *MimicMotion*, which can generate high-quality videos of arbitrary length with any motion guidance. Comparing with previous methods, our approach has several highlights. Firstly, with confidence-aware pose guidance, temporal smoothness can be achieved so model robustness can be enhanced with large-scale training data. Secondly, regional loss amplification based on pose confidence significantly eases the distortion of image significantly. Lastly, for generating long smooth videos, a progressive latent fusion strategy is proposed. By this means, videos of arbitrary length can be generated with acceptable resource consumption. With extensive experiments and user studies, MimicMotion demonstrates significant improvements over previous approaches in multiple aspects.
+In recent years, generative artificial intelligence has achieved significant advancements in the field of image generation, spawning a variety of applications. However, video generation still faces considerable challenges in various aspects such as
+controllability, video length, and richness of details, which hinder the application and popularization of this technology. In this work, we propose a controllable video generation framework, dubbed *MimicMotion*, which can generate high-quality
+videos of arbitrary length with any motion guidance. Comparing with previous methods, our approach has several highlights. Firstly, with confidence-aware pose guidance, temporal smoothness can be achieved so model robustness can be enhanced with
+large-scale training data. Secondly, regional loss amplification based on pose confidence significantly eases the distortion of image significantly. Lastly, for generating long smooth videos, a progressive latent fusion strategy is proposed. By this
+means, videos of arbitrary length can be generated with acceptable resource consumption. With extensive experiments and user studies, MimicMotion demonstrates significant improvements over previous approaches in multiple aspects.
 
 ## News
 
 * `[2025-05-03]`: &#x1F389; Our paper is accepted by ICML 2025. Congratulations and many thanks to the co-authors!
-* `[2024-07-08]`: 🔥 [A superior model checkpoint](https://huggingface.co/tencent/MimicMotion/blob/main/MimicMotion_1-1.pth) has been released as version 1.1. The maximum number of video frames has now been expanded from 16 to 72, significantly enhancing the video quality!
-* `[2024-07-01]`: Project page, code, technical report and [a basic model checkpoint](https://huggingface.co/tencent/MimicMotion/blob/main/MimicMotion_1.pth) are released. A better checkpoint supporting higher quality video generation will be released very soon. Stay tuned!
+* `[2024-07-08]`: 🔥 [A superior model checkpoint](https://huggingface.co/tencent/MimicMotion/blob/main/MimicMotion_1-1.pth) has been released as version 1.1. The maximum number of video frames has now been expanded from 16 to 72, significantly
+  enhancing the video quality!
+* `[2024-07-01]`: Project page, code, technical report and [a basic model checkpoint](https://huggingface.co/tencent/MimicMotion/blob/main/MimicMotion_1.pth) are released. A better checkpoint supporting higher quality video generation will be
+  released very soon. Stay tuned!
 
 ## Quickstart
 
@@ -46,17 +52,26 @@ For the initial released version of the model checkpoint, it supports generating
 Recommend python 3+ with torch 2.x are validated with an Nvidia V100 GPU. Follow the command below to install all the dependencies of python:
 
 ```
+# Official method
 conda env create -f environment.yaml
 conda activate mimicmotion
+
+# Better method (faster installation)
+conda create -n mimicmotion python=3.11 -y
+conda activate mimicmotion
+pip install -r requirements.txt -i https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple
 ```
 
 ### Download weights
+
 If you experience connection issues with Hugging Face, you can utilize the mirror endpoint by setting the environment variable: `export HF_ENDPOINT=https://hf-mirror.com`.
 Please download weights manually as follows:
+
 ```
 cd MimicMotions/
 mkdir models
 ```
+
 1. Download DWPose pretrained model: [dwpose](https://huggingface.co/yzd-v/DWPose/tree/main)
     ```
     mkdir -p models/DWPose
@@ -95,7 +110,8 @@ For the 35s demo video, the 72-frame model requires 16GB VRAM (4060ti) and finis
 
 The minimum VRAM requirement for the 16-frame U-Net model is 8GB; however, the VAE decoder demands 16GB. You have the option to run the VAE decoder on CPU.
 
-## Citation	
+## Citation
+
 ```bib
 @inproceedings{zhang2025mimicmotion,
   title={MimicMotion: High-Quality Human Motion Video Generation with Confidence-aware Pose Guidance},
