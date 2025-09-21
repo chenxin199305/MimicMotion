@@ -104,3 +104,16 @@ The minimum VRAM requirement for the 16-frame U-Net model is 8GB; however, the V
   year={2025}
 }
 ```
+
+---
+
+## Hugging Face Authentication
+
+SVD model need authentication to download. Please follow the steps below to authenticate your Hugging Face account:
+
+1. Create a Hugging Face account if you don't have one.
+2. Generate an access token by navigating to your account settings on the Hugging Face website.
+3. Set the access token as an environment variable in your terminal:
+    ```
+    huggingface-cli login
+    ```
