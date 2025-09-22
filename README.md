@@ -77,10 +77,19 @@ mkdir models
     mkdir -p models/DWPose
     wget https://huggingface.co/yzd-v/DWPose/resolve/main/yolox_l.onnx?download=true -O models/DWPose/yolox_l.onnx
     wget https://huggingface.co/yzd-v/DWPose/resolve/main/dw-ll_ucoco_384.onnx?download=true -O models/DWPose/dw-ll_ucoco_384.onnx
+   
+    # 国内用户可使用以下命令下载
+    export HF_ENDPOINT=https://hf-mirror.com
+    wget $HF_ENDPOINT/yzd-v/DWPose/resolve/main/yolox_l.onnx?download=true -O models/DWPose/yolox_l.onnx
+    wget $HF_ENDPOINT/yzd-v/DWPose/resolve/main/dw-ll_ucoco_384.onnx?download=true -O models/DWPose/dw-ll_ucoco_384.onnx
     ```
 2. Download the pre-trained checkpoint of MimicMotion from [Huggingface](https://huggingface.co/tencent/MimicMotion)
     ```
     wget -P models/ https://huggingface.co/tencent/MimicMotion/resolve/main/MimicMotion_1-1.pth
+   
+    # 国内用户可使用以下命令下载
+    export HF_ENDPOINT=https://hf-mirror.com
+    wget -P models/ $HF_ENDPOINT/tencent/MimicMotion/resolve/main/MimicMotion_1-1.pth
     ```
 3. The SVD model [stabilityai/stable-video-diffusion-img2vid-xt-1-1](https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt-1-1) will be automatically downloaded.
 
